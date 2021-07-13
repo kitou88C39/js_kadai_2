@@ -32,13 +32,12 @@ btn.addEventListener('click', () => {
     const div = document.querySelector('div')
     outputArea.appendChild(fizzbuzz);
 　}
-
-// fizzとbuzzの値が空ならば、outputの中身を空にして注意文を表示する
+  // fizzとbuzzの値が空ならば、outputの中身を空にして注意文を表示する
   if (!fizzNumber || !buzzNumber) {
     output.innerHTML = '';
     output.innerHTML = '<p>Please enter an integer value !</p>'
 
-    // fizzとbuzzの値が数字以外ならば、outputの中身を空にして注意文を表示する
+  // fizzとbuzzの値が数字以外ならば、outputの中身を空にして注意文を表示する
   } else if (fizzNumber.match(/^\D+$/) || buzzNumber.match(/^\D+$/)) {
     output.innerHTML = '';
     output.innerHTML = '<p>Please enter an integer value !</p>'
